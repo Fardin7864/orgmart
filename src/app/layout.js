@@ -1,6 +1,7 @@
 import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/common/Navbar/Navbar";
+import ResponsiveNev from "@/common/Navbar/ResponsiveNev";
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto.className}>
         <Navbar/>
+        <ResponsiveNev/>
         {children}
         </body>
     </html>

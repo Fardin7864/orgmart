@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { IoCartSharp, IoHeart, IoPersonSharp, IoSearch } from "react-icons/io5";
 
@@ -59,10 +58,10 @@ const Navbar = () => {
           <div className=" flex col-span-4">
             <select name="" id="" className=" text-gray-500 w-16 py-2 pl-2 rounded-l text-lg outline-none border-none">
                 <option value="all">All</option>
-                <option className=" text-sm my-5" value="all">Fruits</option>
-                <option value="all">Milk & Dairy</option>
-                <option value="all">Vegetable</option>
-                <option value="all">Meet</option>
+                <option className=" text-sm w-full" value="all">Fruits</option>
+                <option className=" text-sm w-full px-5" value="all">Milk & Dairy</option>
+                <option className=" text-sm" value="all">Vegetable</option>
+                <option className=" text-sm" value="all">Meet</option>
             </select>
             <input 
             type="text" 
