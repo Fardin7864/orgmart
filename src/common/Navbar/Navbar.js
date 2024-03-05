@@ -4,7 +4,7 @@ import { IoCartSharp, IoHeart, IoPersonSharp, IoSearch } from "react-icons/io5";
 const Navbar = () => {
   return (
     <div className=" bg-green bg-[#00ab55]">
-      <div className=" max-w-6xl mx-auto text-gray-100 text-sm pt-2 pb-4">
+      <div className=" max-w-6xl mx-auto text-gray-100 text-sm pt-2 pb-4 px-5 hidden md:block">
         {/* sub nav */}
         <div className=" flex justify-between items-center">
           <h5>Welcome to GreenMart</h5>
@@ -56,7 +56,7 @@ const Navbar = () => {
           </div>
           {/* search bar */}
           <div className=" flex col-span-4">
-            <select name="" id="" className=" text-gray-500 w-16 py-2 pl-2 rounded-l text-lg outline-none border-none">
+            <select name="" id="" className=" text-gray-500 w-16 py-2 pl-2 rounded-l text-base outline-none border-none">
                 <option value="all">All</option>
                 <option className=" text-sm w-full" value="all">Fruits</option>
                 <option className=" text-sm w-full px-5" value="all">Milk & Dairy</option>
@@ -68,7 +68,7 @@ const Navbar = () => {
             name="" 
             id="" 
             placeholder="What are you shoping for?"
-            className="text-gray-500 py-2 pl-2 rounded-r text-base outline-none border-none w-full"
+            className="text-gray-500 py-2 pl-2 rounded-r text-sm outline-none border-none w-full"
             />
             <button className="relative right-11 rounded-r px-2 text-black text-2xl hover:text-[#00ab55]"><IoSearch className=""/></button>
             
